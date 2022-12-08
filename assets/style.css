@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+/* nav start */
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.cola{
+    background-image: url(./imgs/coca-cola-nav.png);
+    background-size: cover;
+    width: 260px;
+    height: 42px;
+}
+
+nav i{
+    color: #fff;
+}
+
+/* nav .cancel-hamburger{
+    display: block;
+} */
+
+nav #cancel-hamburger{
+    display: none;
+}
+
+/* nav end */
+
+/* main start */
+
+/* wellcome section start */
+.wellcome #cola-wellcome{
+    background-image: url(./imgs/cola-wellcome.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 82.5vh;
+}
+/* wellcome section end */
+
+/* items section start */
+main .items{
+    display: flex;
+    flex-direction: column;
+}
+
+main .row1{
+    display: flex;
+    flex-direction: row;
+}
+
+main .row1 .column-imgs{
+    display: flex;
+    flex-direction: column;
+}
+
+main .row1 .brend-img{
+    background-image: url(./imgs/brands.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 1100px;
+    height: 600px;
+}
+
+main .row1 #img1{
+    background-image: url(./imgs/media.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 808px;
+    height: 300px;
+}
+
+main .row1 #img2{
+    background-image: url(./imgs/bilirsinizmi.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 808px;
+    height: 300px;
+}
+
+@media screen and (max-width:1100px){
+    main .row1{
+        flex-direction: column;
+    }
+    main .row1 #img1{
+        width: 1100px;
+        height: 333px;
+    }
+    main .row1 #img2{
+        width: 1100px;
+        height: 333px;
+    }
+}
+
+main .items .row2{
+    display: flex;
+    flex-direction: row;
+}
+
+main .items .row2 .imgs{
+    width: 635px;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+}
+
+main .row2 #img1{
+    background-image: url(./imgs/row2-img1.jpg);
+}
+
+main .row2 #img2{
+    background-image: url(./imgs/row2-img2.jpg);
+}
+
+main .row2 #img3{
+    background-image: url(./imgs/row2-img3.jpg);
+}
+
+@media screen and (max-width:900px) {
+    main .items .row2{
+        flex-direction: column;
+    }
+}
+
+/* items section end */
+/* follow us section start */
+
+.follow-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+
+.follow-us .follow-us-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.follow-us .follow-us-content .row1{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.follow-us .follow-us-content .row1 a{
+    font-size: 22px;
+    color: #000;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.follow-us .follow-us-content .row1 a:target{
+    font-weight: 1000;
+}
+
+.follow-us .follow-us-content .row1 a:hover{
+    color: red;
+}
+
+.follow-us .follow-us-content .row2{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.follow-us .follow-us-content .row2 i{
+    font-size: 88px;
+    color: #ddd;
+}
+
+.follow-us .follow-us-content .row2 i:hover{
+    font-weight: 600;
+}
+/* follow us section end */
+/* main end */
+/* footer start */
+    footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #000;
+        height: 15vh;
+        color: #fff;
+        gap: 20px;
+    }
+    footer .end{
+        display: flex;
+        flex-direction: row;
+        gap: 700px;
+    }
+
+    footer .end .left{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    footer .end .left a{
+        color: #fff;
+        padding: 0px 10px;
+    }
+    footer{
+        color: #fff;
+    }
+/* footer end */
+
