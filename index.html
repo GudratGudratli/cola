@@ -12,7 +12,7 @@
     <!-- nav start -->
     <nav>
         <!-- bura swither() artirmaq lazimdi -->
-        <div class="hamburger">
+        <div class="hamburger" id="hamburger">
             <i class="fa-solid fa-bars"></i>
         </div>
         <div id="cancel-hamburger">
@@ -28,16 +28,34 @@
     <!-- nav end -->
     <!-- main start -->
     <main>
+        <section class = "menu" id="menu">
+            <a>ƏSAS SƏHİFƏ</a>
+            <a id="brand">BRENDLƏR</a>
+            <a>DAHA YAXŞI DÜNYA ÜÇÜN</a>
+            <a>HAQQIMIZDA</a>
+            <a>BİLİRSİNİZMİ?</a>
+            <a>MEDİA</a>
+            <a>ƏLAQƏ</a>
+            <a>LOTEREYA HAQQINDA MƏLUMAT</a>
+
+            <div class="brands-list">
+                <a>COCA‑COLA</a>
+                <a>FANTA</a>
+                <a>BONAQUA</a>
+                <a>SPRITE</a>
+            </div>
+            
+        </section>
         <section class="wellcome">
             <div id="cola-wellcome"></div>
         </section>
         <section class="items">
             <div class="row1">
-                    <div class="brend-img"></div>
-                    <div class="column-imgs">
-                        <div id="img1"></div>
-                        <div id="img2"></div>
-                    </div>
+                <div class="brend-img"></div>
+                <div class="column-imgs">
+                    <div id="img1"></div>
+                    <div id="img2"></div>
+                </div>
             </div>
             <div class="row2">
                 <div class="imgs" id="img1"></div>
@@ -53,9 +71,9 @@
                     <a>Digər ölkələri kəşf edin</a>
                 </div>
                 <div class="row2">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-facebook"></i>
+                    <a><img src="https://www.coca-cola.az/content/dam/one/az/az/system/icons/100-x-100-grey/YouTube_100x100.png"></a>
+                    <a><img src="https://www.coca-cola.az/content/dam/one/az/az/system/icons/100-x-100-grey/Instagram_100x100.png"></a>
+                    <a><img src="https://www.coca-cola.az/content/dam/one/az/az/system/icons/100-x-100-grey/Facebook_100x100.png"></a>
                 </div>
             </div>
         </section>
@@ -63,7 +81,7 @@
     <!-- main end -->
     <!-- footer start -->
     <footer>
-        <div class="cola"></div>
+        <a><div class="cola" id="coca-cola"></div></a>
         <div class="end">
             <div class="left">
                 <a href="">Məxfilik Siyasəti</a>
@@ -74,6 +92,6 @@
         </div>
     </footer>
     <!-- footer end -->
-    
+    <script src="./assets/main.js"></script>
 </body>
 </html>

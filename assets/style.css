@@ -6,6 +6,7 @@
 
 /* nav start */
 nav{
+    z-index: 1;
     width: 100%;
     height: 75px;
     background-color: black;
@@ -20,7 +21,7 @@ nav{
     background-image: url(./imgs/coca-cola-nav.png);
     background-size: cover;
     width: 260px;
-    height: 42px;
+    height: 42.5px;
 }
 
 nav i{
@@ -33,11 +34,51 @@ nav i{
 
 nav #cancel-hamburger{
     display: none;
+    cursor: pointer;
+}
+
+#hamburger{
+    cursor: pointer;
 }
 
 /* nav end */
 
 /* main start */
+
+#menu{
+    
+}
+
+.menu{
+    z-index: 1;
+    width: 300px;
+    height: 100%;
+    opacity: 70%;
+    background-color: black;
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 75px;
+    gap: 20px;
+}
+
+.menu a{
+    color: #fff;
+    margin-top: 25px;
+}
+
+a{
+    cursor: pointer;
+}
+
+.menu .brands-list{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 /* wellcome section start */
 .wellcome #cola-wellcome{
@@ -71,65 +112,101 @@ main .row1 .brend-img{
     background-size: cover;
     width: 1100px;
     height: 600px;
+    transition: 1s;
+}
+
+main .row1 .brend-img:hover{
+    transform: scale(1.2);
 }
 
 main .row1 #img1{
     background-image: url(./imgs/media.jpg);
     background-position: center;
     background-size: cover;
-    width: 808px;
+    width: 928px;
     height: 300px;
+    transition: 1s;
+}
+
+main .row1 #img1:hover{
+    transform: scale(1.2);
 }
 
 main .row1 #img2{
     background-image: url(./imgs/bilirsinizmi.jpg);
     background-position: center;
     background-size: cover;
-    width: 808px;
+    width: 928px;
     height: 300px;
+    transition: 1s;
+}
+
+main .row1 #img2:hover{
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:1100px){
-    main .row1{
+    main .items .row1{
         flex-direction: column;
     }
-    main .row1 #img1{
-        width: 1100px;
+    main .items .row1 .brend-img{
+        width: 100%;
+    }
+    main .items .row1 #img1{
+        width: 100%;
         height: 333px;
     }
-    main .row1 #img2{
-        width: 1100px;
+    main .items .row1 #img2{
+        width: 100%;
         height: 333px;
     }
 }
 
-main .items .row2{
+.items .row2{
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
-
-main .items .row2 .imgs{
-    width: 635px;
-    height: 500px;
+.items .row2 .imgs{
+    width: 33.3%;
+    height: 550px;
     background-position: center;
     background-size: cover;
 }
 
-main .row2 #img1{
+.items .row2 #img1{
     background-image: url(./imgs/row2-img1.jpg);
+    transition: 1s;
 }
 
-main .row2 #img2{
+.items .row2 #img1:hover{
+    transform: scale(1.2);
+}
+
+.items .row2 #img2{
     background-image: url(./imgs/row2-img2.jpg);
+    transition: 1s;
 }
 
-main .row2 #img3{
+.items .row2 #img2:hover{
+    transform: scale(1.2);
+}
+
+.items .row2 #img3{
     background-image: url(./imgs/row2-img3.jpg);
+    transition: 1s;
+}
+
+.items .row2 #img3:hover{
+    transform: scale(1.2);
 }
 
 @media screen and (max-width:900px) {
-    main .items .row2{
+    .items .row2{
         flex-direction: column;
+    }
+    .items .row2 .imgs{
+        width: 100%;
     }
 }
 
@@ -176,12 +253,10 @@ main .row2 #img3{
 .follow-us .follow-us-content .row2{
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     gap: 50px;
-}
-
-.follow-us .follow-us-content .row2 i{
-    font-size: 88px;
-    color: #ddd;
 }
 
 .follow-us .follow-us-content .row2 i:hover{
@@ -197,9 +272,10 @@ main .row2 #img3{
         align-items: center;
         text-align: center;
         background-color: #000;
-        height: 15vh;
+        height: auto;
         color: #fff;
         gap: 20px;
+        height: 16vh;
     }
     footer .end{
         display: flex;
@@ -212,12 +288,16 @@ main .row2 #img3{
         flex-direction: row;
         justify-content: space-between;
     }
+
     footer .end .left a{
         color: #fff;
         padding: 0px 10px;
     }
-    footer{
-        color: #fff;
+
+    @media screen and (max-width:900px) {
+        footer .end{
+            flex-direction: column;
+            gap: 50px;
+        }
     }
 /* footer end */
-
